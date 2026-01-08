@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Roopesh</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="home.html" class="logo">&lt; L Roopesh &gt;</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-container">
+    <h2 class="section-title">My Projects</h2>
+    
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" onclick="filterProjects('hardware')">Hardware / IoT</button>
+        <button class="filter-btn" onclick="filterProjects('software')">Software / Web</button>
+    </div>
+
+    <div class="card-grid">
+        
+        <div class="card project-card" data-category="hardware">
+            <div class="card-header">
+                <h3><i class="fas fa-home"></i> Smart Home Automation</h3>
+                <span class="date">Dec 2024 - May 2025</span>
+            </div>
+            <p><strong>Tech:</strong> ESP-32, IoT, C++</p>
+            <p>Developed a fault-tolerant system using the <strong>CSSR (Cold Standby Sparing Redundancy)</strong> approach. This unique method significantly enhanced energy efficiency and extended the controller's lifespan compared to standard systems.</p>
+            <div class="project-links">
+                 <a href="https://github.com/Roopesh431?tab=repositories" target="_blank" class="btn-sm"><i class="fab fa-github"></i> View Profile</a>
+            </div>
+        </div>
+
+        <div class="card project-card" data-category="hardware">
+            <div class="card-header">
+                <h3><i class="fas fa-bicycle"></i> Functional EV Cycle</h3>
+                <span class="date">Nov 2023 - Mar 2024</span>
+            </div>
+            <p><strong>Tech:</strong> 48V BLDC Motor, Electronics</p>
+            <p>Engineered a fully functional electric cycle. Worked with a 4-member team to integrate the motor and power systems. This project was the <strong>highlight of the department expo</strong>, receiving strong positive feedback.</p>
+        </div>
+
+        <div class="card project-card" data-category="software">
+            <div class="card-header">
+                <h3><i class="fas fa-user-secret"></i> Secret Message Encoder</h3>
+                <span class="date">Apr 2024</span>
+            </div>
+            <p><strong>Tech:</strong> Python, Cryptography</p>
+            <p>A complete text-to-binary encoding system. Implemented accurate ASCII mapping and bit-level logic. Includes debugging logs and structured documentation.</p>
+            <div class="project-links">
+                <a href="https://github.com/Roopesh431/Message-ENC-DEC" target="_blank" class="btn-sm"><i class="fab fa-github"></i> View Code</a>
+            </div>
+        </div>
+        <div class="card project-card" data-category="software">
+            <div class="card-header">
+                <h3><i class="fas fa-user-secret"></i> Secret Message Encoder</h3>
+                <span class="date">Apr 2024</span>
+            </div>
+            <p><strong>Tech:</strong> Python, Cryptography</p>
+            <p>A complete text-to-binary encoding system. Implemented accurate ASCII mapping and bit-level logic. Includes debugging logs and structured documentation.</p>
+            <div class="project-links">
+                <a href="https://github.com/Roopesh431/Message-ENC-DEC" target="_blank" class="btn-sm"><i class="fab fa-github"></i> View Code</a>
+            </div>
+        </div>
+
+         <div class="card project-card" data-category="software">
+            <div class="card-header">
+                <h3><i class="fas fa-laptop-code"></i> Personal Portfolio</h3>
+                <span class="date">Oct 2023 - Present</span>
+            </div>
+            <p><strong>Tech:</strong> HTML5, CSS3, JavaScript</p>
+            <p>Designed this responsive portfolio website to showcase my skills. Features interactive filtering, animations, and a clean dark/light theme structure.</p>
+            <div class="project-links">
+                <a href="https://github.com/Roopesh431" target="_blank" class="btn-sm"><i class="fab fa-github"></i> View Profile</a>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
