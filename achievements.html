@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Achievements | Roopesh</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/loading.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
-        <a href="home.html" class="logo">&lt; L Roopesh &gt;</a>
+      <a href="home.html" class="nav-logo">&lt; L Roopesh &gt;</a>
       <ul class="nav-links">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,33 +26,90 @@
   </header>
 
   <section class="section-container">
-    <h2 class="section-title">Experience & Certifications</h2>
+    <h2 class="section-title">Certifications & Awards</h2>
     
     <div class="card-grid">
-        <div class="card">
-            <h3>Intern @ Fopple Drone Technologies</h3>
-            <span class="date">Jul 2024 - Oct 2024</span>
-            <p>Worked on drone design and operation. Assisted in training sessions and mentoring individuals in drone flying techniques and safety protocols.</p>
+        
+        <div class="card cert-card">
+            <div class="cert-icon"><i class="fab fa-microsoft" style="color: #00a4ef;"></i></div>
+            <h3>Microsoft Certified: Azure Fundamentals</h3>
+            <p>Cloud Computing & Services</p>
+            <button class="btn-sm" onclick="openModal('assests/azure fundamentals.png', 'Azure Fundamentals')">View Certificate</button>
         </div>
 
-        <div class="card">
-            <h3>Virtual Intern @ Cisco AICTE</h3>
-            <span class="date">Apr 2023 - Jul 2023</span>
-            <p>Completed training courses ahead of schedule with scores exceeding 90%. Solved daily scenarios showcasing problem-solving skills.</p>
+        <div class="card cert-card">
+            <div class="cert-icon"><i class="fab fa-aws" style="color: #ff9900;"></i></div>
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <p>Cloud Infrastructure & Deployment</p>
+            <button class="btn-sm" onclick="openModal('assests/awscp.png', 'AWS Cloud Practitioner')">View Certificate</button>
         </div>
 
-        <div class="card">
-            <h3>Certifications</h3>
-            <ul style="padding-left: 20px; color: #4b5563;">
-                <li>Microsoft Certified: Azure Fundamentals</li>
-                <li>Microsoft Certified: Azure AI Fundamentals</li>
-                <li>AWS Certified Cloud Practitioner</li>
-                <li>Oracle Cloud Infrastructure Architect</li>
-                <li>DeepLearning.AI Tensorflow Developer (Coursera)</li>
-            </ul>
+        <div class="card cert-card">
+            <div class="cert-icon"><i class="fas fa-robot" style="color: #E65100;"></i></div>
+            <h3>AI & ML using Python</h3>
+            <p>Industrial Automation (Level-2) - TARAS Systems</p>
+            <button class="btn-sm" onclick="openModal('assests/aiml.png', 'AI & ML using Python - TARAS Systems')">View Certificate</button>
         </div>
+
+        <div class="card cert-card">
+            <div class="cert-icon"><i class="fas fa-helicopter" style="color: #2ecc71;"></i></div>
+            <h3>Internship: UAV Design & Piloting</h3>
+            <p>Fopple Drone Technologies (Multi-Rotor Drones & 3D Printing)</p>
+            <button class="btn-sm" onclick="openModal('assests/intern.png', 'Internship at Fopple Drone Technologies')">View Certificate</button>
+        </div>
+
+        <div class="card cert-card">
+            <div class="cert-icon"><i class="fas fa-robot" style="color: #0078d4;"></i></div>
+            <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+            <p>Artificial Intelligence Solutions</p>
+            <button class="btn-sm" onclick="openModal('assests/ai900.png', 'Azure AI Fundamentals')">View Certificate</button>
+        </div>
+
+        <div class="card cert-card">
+            <div class="cert-icon"><i class="fas fa-industry" style="color: #2d3436;"></i></div>
+            <h3>Industry 4.0 & IoT</h3>
+            <p>NPTEL Online Certification</p>
+            <button class="btn-sm" onclick="openModal('assests/nptel.jpeg', 'Industry 4.0 & IoT')">View Certificate</button>
+        </div>
+
     </div>
+
+    <br><br>
+
+    <h2 class="section-title">Key Contributions</h2>
+    <div class="card">
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;">
+                <strong><i class="fas fa-trophy" style="color: gold;"></i> Workshop Organizer:</strong> Participated in organizing a drone technologies workshop by Fopple Drone Technologies at Godavari Institute of Engineering.
+            </li>
+            <li>
+                <strong><i class="fas fa-users" style="color: #6366f1;"></i> Industrial Visit Coordinator:</strong> Contributed to industrial visits by KITs College, providing insights on real-world drone applications.
+            </li>
+        </ul>
+    </div>
+
   </section>
+
+  <div id="certModal" class="modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-icons">
+        <a href="https://wa.me/917382267508" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:lingamroopesh@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/lingam-roopesh/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="footer-info">
+        <p>Created by <strong>L. Roopesh</strong> with <span class="heart">❤️</span></p>
+        <p class="copyright">&copy; 2026 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
