@@ -183,3 +183,29 @@ ttsBtn.addEventListener("click", () => {
 window.onbeforeunload = () => {
     synth.cancel();
 };
+
+function openModal(imageSrc, captionText) {
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImg");
+    const caption = document.getElementById("caption");
+    
+    // Show the modal
+    modal.style.display = "block";
+    
+    // Set the image and text
+    modalImg.src = imageSrc;
+    caption.innerHTML = captionText;
+}
+
+function closeModal() {
+    const modal = document.getElementById("certModal");
+    modal.style.display = "none";
+}
+
+// Close the modal if the user clicks anywhere outside the image
+window.onclick = function(event) {
+    const modal = document.getElementById("certModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
